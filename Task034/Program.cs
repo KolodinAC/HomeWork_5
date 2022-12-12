@@ -3,11 +3,11 @@
 
 
 
-int minN = UserInput();
-int maxN = UserInput();
-int lengthA = UserInput();
+int minN = UserInput("Введите значение минимального элемента массива: ");
+int maxN = UserInput("Введите значение максимального элемента массива: ");
+int lengthA = UserInput("Введите значение длины массива: ");
 
-int[] array = GenerateArray(minN, maxN , lengthA);
+int[] array = GenerateArray(minN, maxN, lengthA);
 
 PrintArray(array);
 
@@ -21,9 +21,9 @@ Console.WriteLine($"Количество четных чисел в данном
 
 // Methods:
 
-int UserInput()
+int UserInput(string msg)
 {
-    Console.Write("Введите минимальное и максимальное значения эелементов и желаемый размер массива:\t");
+    Console.Write(msg);
     bool isNum = int.TryParse(Console.ReadLine(), out int num);
     if (isNum && num > 0)
     {
