@@ -17,8 +17,6 @@ Console.WriteLine($"Количество четных чисел в данном
 
 
 
-
-
 // Methods:
 
 int UserInput(string msg)
