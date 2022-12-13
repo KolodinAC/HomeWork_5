@@ -52,10 +52,9 @@ void PrintArray(int[] collection)
 int GetSumOfNonEvenIndexNumbers(int[] collection)
 {
     int sum = 0;
-    for (var i = 1; i < collection.Length; i++)
+    for (var i = 1; i < collection.Length; i+=2)
     {
         sum += collection[i];
-        i++;
     }
     return sum;
 }
